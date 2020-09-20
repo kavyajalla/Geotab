@@ -9,18 +9,18 @@ I have divided the project into following pieces to improve readability and incr
 •	Generator – This class acts as the main program where the user interacts with various options in the app
 
 •	ClientAPI - Provides the different Http client API sources from which we can get data
-    o	ChuckNorris API defines all the endpoints required for the application from the base address under the client.
-    o	 NameGenaratorAPI defines the PrivServ API end point to get the name of a person.
+- ChuckNorris API defines all the endpoints required for the application from the base address under the client.
+- NameGenaratorAPI defines the PrivServ API end point to get the name of a person.
 
 •	ConsoleOperations - This provides the console operations required for the current application to perform its tasks.
-    o	ConsoleReader class defines the read operations of the application. The current application requires only readline and readkey operations
-    o	ConsolePrinter class defines the printing operations which are specific to application requirement. Application requires printing single line and list object.
+- ConsoleReader class defines the read operations of the application. The current application requires only readline and readkey operations
+- ConsolePrinter class defines the printing operations which are specific to application requirement. Application requires printing single line and list object.
 
 •	DTO
-    o	ApplicationVariables DTO has all the variables that are required while the generator class is running. 
+- ApplicationVariables DTO has all the variables that are required while the generator class is running. 
 
 •	Services
-    o	JokeService class has the functions that provide data to the user. It has each function to perform single task based on user input. 
+- JokeService class has the functions that provide data to the user. It has each function to perform single task based on user input. 
 
 I have created the above architecture which in order to improve readability as well as providing scope for future extension. It also supports easy maintenance as the program is divided into multiple parts and each part performs its own function.
 
